@@ -1,16 +1,12 @@
 import { useEffect, useState } from 'react';
 
-import { Button } from '../components/Button';
+import { GenreResponseProps } from '../interfaces/commons.interfaces';
 
 import { api } from '../services/api';
 
-import '../styles/sidebar.scss';
+import { Button } from '../components/Button';
 
-interface GenreResponseProps {
-  id: number;
-  name: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family';
-  title: string;
-}
+import '../styles/sidebar.scss';
 
 interface SideBarProps {
   selectedGenre: number;
